@@ -10,11 +10,10 @@ const Header = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="bg-white shadow-md w-full z-10">
+    <nav className="bg-sky-950 shadow-md w-full z-10">
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
         <div className="text-2xl font-bold">LOGO</div>
         <div className="hidden md:flex space-x-6">
-            <a>dfghj</a>
           <Link href="/"className="text-gray-700 hover:text-blue-600">Home</Link>
           <Link href="/about" className="text-gray-700 hover:text-blue-600">About</Link>
           <Link href="/services" className="text-gray-700 hover:text-blue-600">Services</Link>
