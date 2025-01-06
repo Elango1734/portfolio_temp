@@ -1,12 +1,6 @@
 import React from 'react';
-import { Inter } from 'next/font/google';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si';
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
 
 const Profile = () => {
   return (
@@ -14,7 +8,7 @@ const Profile = () => {
         {/* left compartment */}
       <div className="flex text-white flex-col justify-center items-center gap-5">
         <div className='text-2xl lg:text-3xl md:3xl flex w-full justify-center lg:justify-start md:justify-start'>
-          <h1>I'm </h1>
+          <h1>I am </h1>
         </div>
         <div className=' md:text-5xl lg:text-7xl text-4xl font-bold flex w-full justify-center lg:justify-start md:justify-start'>
             <h1>Dharineesh </h1><h2 className='text-sky-800'>&nbsp;G&nbsp;G</h2>
