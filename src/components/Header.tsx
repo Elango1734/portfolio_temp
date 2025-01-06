@@ -10,19 +10,23 @@ const Header = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="bg-sky-950 shadow-md w-full z-10">
-      <div className="container mx-auto px-4 flex justify-between items-center h-16">
-        <div className="text-2xl font-bold">LOGO</div>
-        <div className="hidden md:flex space-x-6">
-          <Link href="/"className="text-gray-700 hover:text-blue-600">Home</Link>
-          <Link href="/about" className="text-gray-700 hover:text-blue-600">About</Link>
-          <Link href="/services" className="text-gray-700 hover:text-blue-600">Services</Link>
-          <Link href="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
+    <nav className="w-full z-10 pt-2 fixed">
+      <div className="md:flex bg-sky-950 container mx-auto md:rounded-full px-4 flex justify-between items-center h-16 lg:w-10/12">
+        <div className="hidden md:flex justify-evenly items-center  text-white flex-1">
+          <div className=""><Link href="/" className="text-gray-400 hover:text-blue-600">Home</Link></div>
+          <div>
+            <Link href="/about" className="text-gray-400 hover:text-blue-600">About</Link>
+          </div>
+          <div><Link href="/services" className="text-gray-400 hover:text-blue-600">Services</Link></div>
+          <div><Link href="/services" className="text-gray-400 hover:text-blue-600">Resume</Link></div>
+          <div><Link href="/services" className="text-gray-400 hover:text-blue-600">Project</Link></div>
+          <div> <Link href="/contact" className="text-gray-400 hover:text-blue-600">Contact</Link></div>
         </div>
         <div className="md:hidden" onClick={handleClick}>
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
       </div>
+
       <div className={`md:hidden ${nav ? 'block' : 'hidden'}`}>
         <ul className="flex flex-col items-center space-y-4 mt-4">
           <li><Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link></li>
