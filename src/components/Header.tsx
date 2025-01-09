@@ -16,7 +16,7 @@ const Header = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="w-full z-10 fixed">
+    <nav className="w-full z-10 fixed scroll-dark_background">
       <div className="md:flex bg-dark_transparent container mx-auto px-4 flex justify-between items-center h-16">
         <div className="hidden md:flex justify-evenly items-center  text-white flex-1">
           <div className="/home"><Link href="/" className="text-gray-200 hover:text-blue-600">Home</Link></div>

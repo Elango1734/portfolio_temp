@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
         primary: 'rgba(2, 132, 199)',
         primary_transparent: 'rgba(2, 132, 199, 0.5)',
-        dark_transparent: 'rgba(0, 0, 0, 0.6)',
+        dark_transparent: 'rgba(0, 0, 0, 0.4)',
         texthead:'#ffffff',
         bodytext:'#a3a3a3',
       },
