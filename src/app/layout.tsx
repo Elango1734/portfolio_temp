@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
 import { redirect } from "next/navigation";
 
 // const geistSans = Geist({
@@ -27,7 +26,6 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header/>
         {children}
       </body>
     </html>
