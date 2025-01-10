@@ -129,3 +129,24 @@ body {
     border-bottom: 1px solid rgb(95, 94, 94);
   }
 }
+.text{
+  overflow: hidden;
+  border-right: 0.15em soild orange;
+  white-space: nowrap;
+  animation: typing 4s steps(40, end) infinite;
+}
+@keyframes typing {
+  0%{
+    width: 0;
+  }
+  30%{
+    width: 100%;
+  }
+  90%{
+    width: 100%;
+  }
+  100%{
+    width: 0;
+  }
+  
+}

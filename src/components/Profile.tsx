@@ -9,10 +9,16 @@ const Profile = () => {
     >
       <div className='flex flex-col w-full text-neutral-300 justify-center items-center gap-5'>
         <div className='text-primary font-extrabold text-3xl rounded-full px-3 py-2'>HELLO, WORLD!</div>
-        <div>
-          <div className='flex gap-2 text-3xl md:text-8xl font-bold'>
+        <div className=''>
+          <div className='flex gap-2 text-3xl md:text-8xl font-bold text'>
             <h1>{`I'm`}</h1>&nbsp;
-            <h1 className='flex '><p>Dharineesh</p>&nbsp;<p className='text-primary'>G</p>&nbsp;<p className='text-primary'>G</p></h1>
+            <h1 className='flex '>
+              <p>Dharineesh</p>
+              &nbsp;
+              <p className='text-primary'>G</p>
+              &nbsp;
+              <p className='text-primary'>G</p>
+            </h1>
           </div>
         </div>
         <div className='flex justify-center gap-3 md:p-5 p-2 text-sm text-bodytext'>
