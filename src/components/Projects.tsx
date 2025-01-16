@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Projects = () => {
@@ -9,7 +10,7 @@ const Projects = () => {
             <div className='grid md:grid-cols-2 grid-flow-row gap-9'>
                 {/* zoamto_clone */}
                 <div className='hover_reveal-parent' style={{ position: 'relative', display: 'inline-block', width: '100%', height: '100%', boxShadow:'1px 1px 10px grey', borderRadius:'30px', overflow:'hidden' }}>
-                    <img src="/images/zomato_clone.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                    <Image src="/images/zomato_clone.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
                     <div style={{
                         position: 'absolute',
                         top: 0,
@@ -25,7 +26,7 @@ const Projects = () => {
 
                 {/* snake_game */}
                 <div className='hover_reveal-parent' style={{ position: 'relative', display: 'inline-block', width: '100%', height: '100%', boxShadow:'1px 1px 10px grey', borderRadius:'30px', overflow:'hidden' }}>
-                    <img src="/images/snake_game.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                    <Image src="/images/snake_game.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
                     <div style={{
                         position: 'absolute',
                         top: 0,
@@ -41,7 +42,7 @@ const Projects = () => {
 
                 {/*book-stack */}
                 <div className='hover_reveal-parent' style={{ position: 'relative', display: 'inline-block', width: '100%', height: '100%', boxShadow:'1px 1px 10px grey', borderRadius:'30px', overflow:'hidden' }}>
-                    <img src="/images/book_stack.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                    <Image src="/images/book_stack.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
                     <div style={{
                         position: 'absolute',
                         top: 0,
@@ -57,7 +58,7 @@ const Projects = () => {
 
                 {/*turtle_race */}
                 <div className='hover_reveal-parent' style={{ position: 'relative', display: 'inline-block', width: '100%', height: '100%', boxShadow:'1px 1px 10px grey', borderRadius:'30px', overflow:'hidden' }}>
-                    <img src="/images/turtle_race.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                    <Image src="/images/turtle_race.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
                     <div style={{
                         position: 'absolute',
                         top: 0,
@@ -73,7 +74,7 @@ const Projects = () => {
 
                 {/* hangman */}
                 <div className='hover_reveal-parent' style={{ position: 'relative', display: 'inline-block', width: '100%', height: '100%', boxShadow:'1px 1px 10px grey', borderRadius:'30px', overflow:'hidden' }}>
-                    <img src="/images/hangman.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                    <Image src="/images/hangman.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
                     <div style={{
                         position: 'absolute',
                         top: 0,
@@ -89,7 +90,7 @@ const Projects = () => {
 
                 {/*coffee-machine */}
                 <div className='hover_reveal-parent' style={{ position: 'relative', display: 'inline-block', width: '100%', height: '100%', boxShadow:'1px 1px 10px grey', borderRadius:'30px', overflow:'hidden' }}>
-                    <img src="/images/coffee_machine.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                    <Image src="/images/coffee_machine.jpeg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
                     <div style={{
                         position: 'absolute',
                         top: 0,
@@ -105,7 +106,7 @@ const Projects = () => {
 
                 {/*day-light automator */}
                 <div className='hover_reveal-parent' style={{ position: 'relative', display: 'inline-block', width: '100%', height: '100%', boxShadow:'1px 1px 10px grey', borderRadius:'30px', overflow:'hidden' }}>
-                    <img src="/images/day-light.jpg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                    <Image src="/images/day-light.jpg" alt="Description of image" style={{ width: '100%', height: 'auto', display: 'block' }} />
                     <div style={{
                         position: 'absolute',
                         top: 0,

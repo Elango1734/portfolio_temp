@@ -2,8 +2,6 @@ import React from 'react'
 
 const About = () => {
 
-    const imageUrl: string = '/images/fish-back.jpg';
-
     return (
         <div 
         style={{
