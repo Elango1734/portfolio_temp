@@ -69,7 +69,6 @@ const Services: React.FC = () => {
           <h1 className='text-center'>Logging & Monitoring</h1>
         </div>
       </div>
-
     </div>
   )
 }
