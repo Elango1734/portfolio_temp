@@ -2,7 +2,8 @@
 import React, { ReactNode, useEffect, useRef, useState } from 'react'
 import CrossSpinner from './CrossSpinner';
 import Header from './Header';
-const TIMEOUT:number = 1000;
+const TIMEOUT: number = 1000;
+const BREAKPOINT = 768;
 
 type children = { children: ReactNode; }
 
@@ -16,17 +17,17 @@ const Main: React.FC<children> = ({ children }) => {
     const img = new Image();
     img.src = imageUrl;
 
-    let loaderTimer:NodeJS.Timeout;
-    let fadeTimer:NodeJS.Timeout;
+    let loaderTimer: NodeJS.Timeout;
+    let fadeTimer: NodeJS.Timeout;
     img.onload = () => {
-      loaderTimer = setTimeout(()=>{
+      loaderTimer = setTimeout(() => {
         setLoading(false);
-      },TIMEOUT);
-      fadeTimer = setTimeout(()=>{
+      }, TIMEOUT);
+      fadeTimer = setTimeout(() => {
         setVisible(true);
-      },TIMEOUT+50)
+      }, TIMEOUT + 50)
     };
-    return ()=>{
+    return () => {
       clearTimeout(loaderTimer);
       clearTimeout(fadeTimer);
     }
@@ -35,14 +36,18 @@ const Main: React.FC<children> = ({ children }) => {
   useEffect(() => {
 
     const handleScroll = () => {
-      const parallax = parallaxRef.current;
-      const offset = window.scrollY;
+      console.log(window.innerWidth);
+      if (window.innerWidth > BREAKPOINT) {
+        const parallax = parallaxRef.current;
+        const offset = window.scrollY;
 
-      if (parallax) {
-        const xPos = -offset / 5 + 2;
-        const yPos = offset / 5 + 20;
-        parallax.style.backgroundPosition = `${xPos}px ${yPos}%`;
+        if (parallax) {
+          const xPos = -offset / 5;
+          const yPos = offset / 5 + 20;
+          parallax.style.backgroundPosition = `${xPos}px ${yPos}%`;
+        }
       }
+
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -70,7 +75,7 @@ const Main: React.FC<children> = ({ children }) => {
               backgroundPosition: 'center 20%',
               transition: 'all 0.1s linear'
             }}
-            className={`min-w-80 max-w-screen-2xl bg-cover bg-center w-full fade-in ${visible?'visible':''} `}
+            className={`min-w-80 max-w-screen-2xl bg-cover bg-repeat bg-center w-full fade-in ${visible ? 'visible' : ''} `}
           >
             {children}
           </div>

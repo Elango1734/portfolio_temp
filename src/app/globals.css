@@ -112,6 +112,7 @@ body {
   }
   to{
     opacity: 0;
+    /* background-color: aqua; */
   }
 }
 
@@ -149,4 +150,26 @@ body {
     width: 0;
   }
   
+}
+
+.hover_reveal-parent{
+  position: relative;
+}
+.hover_reveal-child{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(-100%);
+  top: 0;
+  left: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.hover_reveal-parent:hover .hover_reveal-child{
+  transform: translateY(0);
+
 }
