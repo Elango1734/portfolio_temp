@@ -47,7 +47,6 @@ const Main: React.FC<children> = ({ children }) => {
           parallax.style.backgroundPosition = `${xPos}px ${yPos}%`;
         }
       }
-
     };
 
     window.addEventListener('scroll', handleScroll);
