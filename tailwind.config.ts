@@ -11,11 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: 'rgba(2, 132, 199)',
-        primary_transparent: 'rgba(2, 132, 199, 0.5)',
+        primary: 'rgba(13, 143, 129)',
+        primary_transparent: 'rgba(13, 143, 129, 0.5)',
         dark_transparent: 'rgba(0, 0, 0, 0.4)',
-        texthead:'#ffffff',
-        bodytext:'#a3a3a3',
+        texthead: '#ffffff',
+        bodytext: '#a3a3a3',
       },
       screens: {
         'xs': '480px',

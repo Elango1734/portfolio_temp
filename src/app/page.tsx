@@ -1,7 +1,7 @@
 import About from "@/components/About";
 import Main from "@/components/Main";
 import Profile from "@/components/Profile";
-import Projects from "@/components/Projects";
+// import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
@@ -9,12 +9,12 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <Main>
-      <Profile/>
-      <About/>
-      <Resume/>
-      <Services/>
-      <Skills/>
-      <Projects/>
+      <Profile />
+      <About />
+      <Resume />
+      <Services />
+      <Skills />
+      {/* <Projects/> */}
     </Main>
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     //   <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">

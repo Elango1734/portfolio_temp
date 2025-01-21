@@ -11,7 +11,7 @@ const Main: React.FC<children> = ({ children }) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [visible, setVisible] = useState<boolean>(false);
   const parallaxRef = useRef<HTMLDivElement>(null);
-  const imageUrl: string = '/images/mountain.jpg';
+  const imageUrl: string = '/images/dev_bg.jpg';
 
   useEffect(() => {
     const img = new Image();
@@ -68,7 +68,7 @@ const Main: React.FC<children> = ({ children }) => {
             ref={parallaxRef}
             style={{
               margin: '0 auto',
-              borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1))',
+              borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))',
               backgroundImage: `url(${imageUrl})`,
               backgroundAttachment: 'fixed',
               backgroundPosition: 'center 20%',
