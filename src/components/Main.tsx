@@ -1,13 +1,17 @@
 "use client"
 import React, { ReactNode, useEffect, useRef, useState } from 'react'
 import CrossSpinner from './CrossSpinner';
-import Header from './Header';
+import { TbArrowBigUpLinesFilled } from 'react-icons/tb';
 const TIMEOUT: number = 1000;
 const BREAKPOINT = 768;
 
-type children = { children: ReactNode; }
+type mainProps = {
+  children: ReactNode;
+  profileRef: React.RefObject<HTMLDivElement | null>;
+  scrollToView: (ref: React.RefObject<HTMLDivElement | null>) => void;
+}
 
-const Main: React.FC<children> = ({ children }) => {
+const Main: React.FC<mainProps> = ({ children, profileRef, scrollToView }) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [visible, setVisible] = useState<boolean>(false);
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -63,7 +67,6 @@ const Main: React.FC<children> = ({ children }) => {
         <CrossSpinner />
         :
         <>
-          <Header />
           <div
             ref={parallaxRef}
             style={{
@@ -77,6 +80,12 @@ const Main: React.FC<children> = ({ children }) => {
             className={`min-w-80 max-w-screen-2xl bg-cover bg-repeat bg-center w-full fade-in ${visible ? 'visible' : ''} `}
           >
             {children}
+            <div
+              onClick={() => scrollToView(profileRef)}
+              className='sticky bottom-[10px] right-[10px] ml-auto p-2 bg-primary font-black rounded-full text-texthead cursor-pointer w-[50px] h-[50px] flex items-center justify-center'
+            >
+              <TbArrowBigUpLinesFilled />
+            </div>
           </div>
         </>
 

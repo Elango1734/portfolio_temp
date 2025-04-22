@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-const Resume = () => {
+const Resume = ({resumeRef}:{resumeRef:React.RefObject<HTMLDivElement | null>}) => {
     const handleDownload = () => {
         const filePath = "/resume/elangovan_resume.pdf"; // Path relative to the `public` folder
         const link = document.createElement("a");
@@ -14,7 +14,9 @@ const Resume = () => {
     };
 
     return (
-        <div className='bg-gradient-to-b from-neutral-700 to-transparent gap-5 py-20 px-5 md:px-20 border-t-2 border-solid border-neutral-600 flex flex-col gap-9'>
+        <div 
+        ref={resumeRef}
+        className='bg-gradient-to-b from-neutral-700 to-transparent gap-5 py-20 px-5 md:px-20 border-t-2 border-solid border-neutral-600 flex flex-col gap-9'>
             <h1 className="text-3xl font-extrabold text-primary text-center"><u>RESUME</u></h1>
             <h1 className='font-bold text-3xl text-white text-center'>Have a look at my experience</h1>
             <p className='text-center text-bodytext text-xs md:text-lg'>With extensive experience and expertise, I have had the opportunity to work on a diverse range of projects. Each service I provide is designed to deliver unique and innovative solutions tailored to your needs. Here are the key areas I specialize in</p>

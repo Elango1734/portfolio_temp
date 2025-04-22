@@ -1,9 +1,10 @@
 import React from 'react'
 
-const About = () => {
+const About = ({ aboutRef }: { aboutRef: React.RefObject<HTMLDivElement | null> }) => {
 
     return (
         <div
+            ref={aboutRef}
             style={{
                 margin: '0 auto',
                 // borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1))',
