@@ -10,7 +10,6 @@ type HeaderProps={
   resumeRef:React.RefObject<HTMLDivElement | null>;
   servicesRef:React.RefObject<HTMLDivElement | null>;
   skillsRef:React.RefObject<HTMLDivElement | null>;
-  projectsRef:React.RefObject<HTMLDivElement | null>;
   contactRef:React.RefObject<HTMLDivElement | null>;
   scrolltoView: (ref:React.RefObject<HTMLDivElement | null>) => void;
 }
