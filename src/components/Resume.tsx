@@ -50,7 +50,7 @@ const Resume = ({resumeRef}:{resumeRef:React.RefObject<HTMLDivElement | null>}) 
             </div>
             <div className='flex justify-center items-center pt-9'>
                 <div
-                    className='py-3 px-5 bg-primary rounded-full'
+                    className='py-3 px-5 bg-primary rounded-full cursor-pointer'
                     onClick={handleDownload}
                 >
                     Download CV

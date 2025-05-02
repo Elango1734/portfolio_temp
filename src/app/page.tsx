@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <Main scrollToView={scrolltoView} profileRef={profileRef}>
-      <Header profileRef={profileRef} aboutRef={aboutRef} resumeRef={resumeRef} servicesRef={servicesRef} skillsRef={skillsRef} contactRef={contactRef} scrolltoView={scrolltoView} />
+      <Header profileRef={profileRef} aboutRef={aboutRef} resumeRef={resumeRef} servicesRef={servicesRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrolltoView={scrolltoView} />
       <Profile profileRef={profileRef} resumeRef={resumeRef} projectsRef={projectsRef} scrolltoView={scrolltoView} />
       <About aboutRef={aboutRef} />
       <Resume resumeRef={resumeRef} />
